@@ -4,7 +4,7 @@ Route::get('/', 'WelcomeController');
 
 # /routes/web.php
 Route::get('/calculator', 'CalculatorController@createCalc');
-Route::get('/calculator', 'CalculatorController@calculate');
+Route::post('/calculator', 'CalculatorController@calculate');
 
 if(config('app.env') == 'local') {
 	Route::get('/logs', function() { });

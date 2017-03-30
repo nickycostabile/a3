@@ -5,7 +5,8 @@
 	<div id="container">
 		<h1>The Bill Splitter</h1>
 
-		<form method="GET" action="/calculator">
+		<form method="POST" action="/calculator">
+			{{ csrf_field() }}
 
 			<label for="billAmount">Bill Amount*</label>
 				<input type="text" name="billAmount" id="billAmount" class="inputNum">
@@ -15,7 +16,7 @@
 
 			
 			<label for="tipIncluded">Tip Included?</label>
-				<label for="tipIncluded"><input type="checkbox" name="tipIncluded" id="tipIncluded" {{-- {{ ($tipIncluded) ? 'CHECKED' : '' }} --}}>Yes</label>
+				<label for="tipIncluded"><input type="checkbox" name="tipIncluded" id="tipIncluded" >Yes</label>
 			
 
 			<label for="tipPercentage">Tip Percentage</label>
@@ -29,7 +30,7 @@
 
 				
 				<label for="round">Round?</label>
-				<label for="round"><input type="checkbox" name="round" id="round" value="yes" {{-- {{ ($round) ? 'CHECKED' : '' }} --}}>Yes</label>
+				<label for="round"><input type="checkbox" name="round" id="round" value="yes" >Yes</label>
 
 				<button type="submit" id="submitBtn">Calculate</button>
 
@@ -51,6 +52,7 @@
 			    </ul>
 			@endif
 		</div>
+		
 
 	</div> {{-- End Container Div --}}
 
