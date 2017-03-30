@@ -6,9 +6,6 @@ Route::get('/', 'WelcomeController');
 Route::get('/calculator', 'CalculatorController@createCalc');
 Route::post('/calculator', 'CalculatorController@calculate');
 
-if(config('app.env') == 'local') {
-	Route::get('/logs', function() { });
-}
 
 # Laravel 5 Log Viewer Package
 if(config('app.env') == 'local') {

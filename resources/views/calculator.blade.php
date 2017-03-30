@@ -39,7 +39,7 @@
 
 		 <div id="results">
 			@if($personAmount != null)
-			<p>Each person will pay ${{ $personAmount }}</p>
+				<p>Each person will pay ${{ $personAmount }}</p>
 			@endif
 		</div>
 

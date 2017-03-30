@@ -14,7 +14,10 @@ class CalculatorController extends Controller {
 	* Display the form to calculate
 	*/
 	public function createCalc() {
-		return view('calculator');
+		$personAmount = "";
+		return view('calculator')->with([
+		        'personAmount' => $personAmount
+		    ]);;
 
 	}
 
@@ -62,9 +65,7 @@ class CalculatorController extends Controller {
 		} # end if post
 
 
-		return view('calculator')->with([
-		        'personAmount' => $personAmount,
-		    ]);
+		return view('calculator');
 		
 
     }
