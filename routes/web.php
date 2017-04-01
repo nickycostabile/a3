@@ -1,8 +1,10 @@
 <?php
 
-Route::get('/', 'WelcomeController');
+# /
+Route::get('/', 'CalculatorController@createCalc');
+Route::post('/', 'CalculatorController@calculate');
 
-# /routes/web.php
+# /calculator
 Route::get('/calculator', 'CalculatorController@createCalc');
 Route::post('/calculator', 'CalculatorController@calculate');
 

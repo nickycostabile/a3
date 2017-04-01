@@ -1,4 +1,4 @@
-{{-- /resources/views/books/calculator.blade.php --}}
+{{-- /resources/views/calculator.blade.php --}}
 @extends('layouts.master')
 
 @section('content')
@@ -20,19 +20,19 @@
 			
 
 			<label for="tipPercentage">Tip Percentage</label>
-			<input list="tipPercentage" name="tipPercentage" id="list" class="inputNum">
-				<datalist id="tipPercentage">
-					<option value="10%">
-					<option value="15%">
-					<option value="20%">
-					<option value="25%">
-				</datalist>
+				<input list="tipPercentage" name="tipPercentage" id="list" class="inputNum">
+					<datalist id="tipPercentage">
+						<option value="10%">
+						<option value="15%">
+						<option value="20%">
+						<option value="25%">
+					</datalist>
 
 				
-				<label for="round">Round?</label>
-				<label for="round"><input type="checkbox" name="round" id="round" value="yes" >Yes</label>
+			<label for="round">Round?</label>
+			<label for="round"><input type="checkbox" name="round" id="round" value="yes" >Yes</label>
 
-				<button type="submit" id="submitBtn">Calculate</button>
+			<button type="submit" id="submitBtn">Calculate</button>
 
 		</form>
 
